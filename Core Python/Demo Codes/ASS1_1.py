@@ -21,3 +21,4 @@ print(f'Percentage of student is :{percentage}%',"\n") # f string is use for for
 # if we want to convert it into integer we can use int() function
 percentage_int = int(percentage)
 print("Percentage of student in integer is:", percentage_int)
+print("type of percentage is:", type(percentage_int),"\n")
