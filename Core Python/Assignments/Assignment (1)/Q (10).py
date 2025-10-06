@@ -1,4 +1,4 @@
-# Write a program to calculate area of an equilateral triangle.
+# Write a program to calculate area of an equilateral triangle ?
 
 # take side of triangle as input from user
 side = int(input("Enter side of equilateral triangle: "))
