@@ -39,3 +39,5 @@ print("type of sum2 is:",type(sum2))
 # so we have to convert it into integer using int() function
 
 
+num1 = int(input("Enter Number1 : "))
+num2 = int

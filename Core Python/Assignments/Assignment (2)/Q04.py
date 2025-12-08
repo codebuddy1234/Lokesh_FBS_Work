@@ -1,4 +1,5 @@
 # 4. WAP to calculate area of triangle and rectangle  
+print("Area Calculation")
 Length =float(input("Enter the Length in cm :"))
 Width =float(input("Enter the Width in cm :"))
 Base =float(input("Enter the Base in cm :"))

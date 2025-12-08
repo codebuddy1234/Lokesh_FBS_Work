@@ -1,6 +1,6 @@
 # 7. Write a program to check if user has entered correct userid and password.
-id = "Ankit001"
-Password = "A2005T"
+id = "Lokesh001"
+Password = "Lk123"
 
 
 User_id = input("Enter your user id : ")

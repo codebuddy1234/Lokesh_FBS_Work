@@ -1,33 +1,51 @@
 # 11. Write a program to accept an integer amount from user and tell minimum 
 # number of notes needed for representing that amount. 
+amt = int(input("Enter the Amount:"))
 
-Amount = int(input("Enter The amount : "))
-TwoThousand = Amount//2000
-Remain1= Amount - 2000*TwoThousand
-Temp = Amount%2000
-Fivehundred = Temp//500
-Remain2= Remain1 - 500*Fivehundred
-Temp = Temp%500
-Twohundred = Temp // 200
-Remain3 = Remain2 - 200*Twohundred
-Temp = Temp % 200
-hundred = Temp//100
-Remain4= Remain3 - 100*hundred
-Temp = Temp % 100
-fifty = Temp //50
-Remain5= Remain4 - 50*fifty
-Temp = Temp % 50
-Twenty = Temp//20
-Remain6 = Remain5 -20*Twenty
-Temp = Temp % 20
-Ten = Temp//10
-Remain7 = Remain6 -10*Ten
+temp = amt
 
+n2000 = temp//2000 
+print(f'{n2000} notes of 2000')
+temp = temp % 2000 
 
-print(f'{TwoThousand} Notes needed of 2000 to represent {Amount} remains->{Remain1}')
-print(f'{Fivehundred} Notes needed of 500 to represent {Amount}  remains->{Remain2}')
-print(f'{Twohundred} Notes needed of 200 to represent {Amount}  remains->{Remain3}')
-print(f'{hundred} Notes needed of 100 to represent {Amount}  remains->{Remain4}')
-print(f'{fifty} Notes needed of 50 to represent {Amount}  remains->{Remain5}')
-print(f'{Twenty} Notes needed of 20 to represent {Amount}  remains->{Remain6}')
-print(f'{Ten} Notes needed of 10 to represent {Amount}  remains->{Remain7}')
+n500 = temp//500 
+print(f'{n500} notes of 500')
+temp = temp % 500 
+
+n200 = temp//200 
+print(f'{n200} notes of 200')
+temp = temp % 200 
+
+n100 = temp//100 
+print(f'{n100} notes of 100')
+temp = temp % 100 
+
+n50 = temp//50 
+print(f'{n50} notes of 50')
+temp = temp % 50 
+
+n20 = temp//20 
+print(f'{n20} notes of 20')
+temp = temp % 20 
+
+n10 = temp//10 
+print(f'{n10} notes of 10')
+temp = temp % 10 
+
+c5 = temp//5 
+print(f'{c5} coins of 5')
+temp= temp % 5
+
+c2 = temp // 2
+print(f'{c2} coins of 2')
+temp = temp%2
+
+c1 = temp // 1
+print(f'{c1} coins of 1')
+print("******************************************************************")
+
+total_n = n2000+n500+n200+n100+n50+n20+n10
+print(f"{total_n}Minimum Notes Required for this Amount" )
+
+coins_n = c5+c2+c1
+print(f'{coins_n} Coins Required for this remaining amount')

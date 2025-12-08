@@ -4,8 +4,8 @@
 # failed. (Something like captcha)
 
 import random
-id = "Ankit001"
-Password = "A2005T"
+id = "Lokesh001"
+Password = "Lk123"
 
 User_id = input("Enter your user id : ")
 User_pass = input("Enter your password : ")
