@@ -1,16 +1,32 @@
 # Q9. Write a program to check if entered number is a palindrome.
 
-n = int(input("Enter a number: "))
+def is_palindrome(num):
+    return num == reverse_number(num)
 
-temp = n
-rev = 0
+def reverse_number(num):
+    rev = 0
+    while num > 0:
+        rev = rev * 10 + num % 10
+        num //= 10
+    return rev
 
-while (temp > 0):
-    dig = temp % 10
-    rev = rev * 10 + dig
-    temp = temp // 10
-
-if rev == n:
-    print("Palindrome")
+n = int(input("Enter number: "))
+if is_palindrome(n):
+    print("Palindrome Number")
 else:
-    print("Not Palindrome")
+    print("Not a Palindrome Number")
+
+# n = int(input("Enter a number: "))
+
+# temp = n
+# rev = 0
+
+# while (temp > 0):
+#     dig = temp % 10
+#     rev = rev * 10 + dig
+#     temp = temp // 10
+
+# if rev == n:
+#     print("Palindrome")
+# else:
+#     print("Not Palindrome")

@@ -1,15 +1,11 @@
 # Q7. Write a program to find sum of digits of a number using function.
 
-n = int(input("Enter the Number: "))
-temp = n
-t_d = int(input("Enter the How many digits in Number: "))
-sum = 0
+def sum_digits(num):
+    total = 0
+    while num > 0:
+        total += num % 10
+        num //= 10
+    return total
 
-for i in range(1, t_d + 1):
-    dig = temp % 10
-    sum += (dig ** t_d)
-    temp = temp // 10
-
-print(sum)
-
-
+n = int(input("Enter number: "))
+print("Sum of digits =", sum_digits(n))

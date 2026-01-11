@@ -1,14 +1,13 @@
 # Q6. Fibonacci series (n terms).
 
-n = int(input("Enter A Number: "))
+def fibonacci(n):
+    a, b = 1, 1
+    print(a, b, end=" ")
+    for i in range(2, n):
+        c = a + b
+        print(c, end=" ")
+        a = b
+        b = c
 
-a = 0
-b = 1
-i = 1
-
-while (i <= n):
-    print(a, end = " ")
-    nxt = a + b
-    a = b
-    b = nxt
-    i = i + 1
+n = int(input("Enter number of terms: "))
+fibonacci(n)

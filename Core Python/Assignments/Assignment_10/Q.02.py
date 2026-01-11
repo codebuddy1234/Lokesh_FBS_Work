@@ -1,15 +1,17 @@
 # Q2. Write a program to find maximum and minimum element in a list.
 
-lst = [4, 9, 2, 11, 6]
+li =[1,-2,3,4,5]
 
-maxi = lst[0]
-mini = lst[0]
+max=li[0]
+min=li[0]
 
-for x in lst:
-    if x > maxi:
-        maxi = x
-    if x < mini:
-        mini = x
-
-print("Maximum =", maxi)
-print("Minimum =", mini)
+for i in li:
+    
+    if i > max:
+        max =i
+    elif i < min:
+        min =i 
+    else:
+        pass
+print(f'MAX VALUE IN LIST :{max}')
+print(f'MIN VALUE IN LIST :{min}')
